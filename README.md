@@ -1,3 +1,4 @@
 # yoga-website
 A basic frontend website developed using HTML,CSS,Bootstrap.
-usage of some new HTML tags and Google Maps api
+Usage of some new HTML tags and Google Translate and Maps api.
+Live at yoga.comeze.com
