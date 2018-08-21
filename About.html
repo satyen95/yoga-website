@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yoga</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="footer, links, icons" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="footer-distributed.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="icon1.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Yoga</a></li>
+        <li><a href="Asanas.html">Asanas</a></li>
+        <li  class="active"><a href="#">Developer</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container text-center">   
+      <br>
+
+      <img src="sat.png" class="img-responsive center-block" />
+      <br>
+      <h1>Satyen Mourya</h1>
+      
+<br>
+<hr>
+<h2>Developed here:</h2>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 19.0301167, lng:73.02236140000001};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5KIOiO3zE7fZHkD7U2iF4Ci0BAjMIm2Q&callback=initMap">
+    </script>
+<br>
+      
+</div>
+  <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="https://www.facebook.com/satyen.maurya"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/satyen_maurya"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/satyen.maurya"><i class="fa fa-instagram"></i></a>
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a href="index.html">Yoga</a>
+          ·
+          <a href="Asanas.html">Asanas</a>
+          ·
+          <a href="About.html">Developers</a>
+          ·
+          <a href="https://satyenmaurya.blogspot.in">Blog</a>
+        </p>
+      </div>
+
+  </footer>
+
+</body>
+</html>
