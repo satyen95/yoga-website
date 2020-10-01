@@ -1,4 +1,4 @@
-# yoga-website
+# yoga-website - Have a look at my own creation!
 Live at :
 https://yoga-demo.000webhostapp.com/
 
