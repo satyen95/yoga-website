@@ -1,19 +1,56 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
 *{
 	padding:0;
 	margin:0;
 }
 
-html{
-	background-color: #eaf0f2;
-}
+
 
 body{
 	font:14px/1.5 Arial, Helvetica, sans-serif;
+	background-color: #ffdd99;
+}
+#title{
+	font-family:'Sansita Swashed', cursive ,sans-serif;
+	font-size: 54px;
+	color:brown;
 }
 
-header{
+ .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='brown' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar{
+  background-color:black;
+
+}
+.navbar-toggler {
+  border-color: black;
+} 
+.nav-link{
+  margin:6px;
+}
+
+
+ a {
+  color: #993300;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ul a:hover {
+  background-color: #FFFF00;
+     width: -webkit-fit-content;
+    color: #FFC0CB;
+
+}
+.container{
+	background-color: #ffdd99;
+}
+
+
+/*header{
 	text-align: center;
 	padding-top: 100px;
 	margin-bottom:200px;
@@ -86,15 +123,29 @@ header ul li{
 	display: inline-block;
 }
 
-
+*/
 /* In our demo, the footers are fixed to the bottom of the page */
 
 footer{
 	position: fixed;
 	bottom: 0;
 }
+#footer-space{
+	
+    padding-left: 10px;
+   
+}
+.fa-facebook:hover{
+	color: blue;
+}
+.fa-twitter:hover{
+	color:#1DA1F2;
+}
+.fa-instagram:hover{
+	color:red;
+}
 
 @media (max-height:800px){
 	footer { position: static; }
-	header { padding-top:40px; }
+	/*header { padding-top:40px; }*/
 }
